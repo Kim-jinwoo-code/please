@@ -2,11 +2,7 @@ package com.example.listkt
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Adapter
-import android.widget.ArrayAdapter
-import android.widget.ListAdapter
-import android.widget.ListView
-import android.widget.Toast
+import android.widget.*
 import kotlinx.android.synthetic.main.activity_main.*
 import android.view.View as View1
 
@@ -29,6 +25,5 @@ class MainActivity : AppCompatActivity() {
 //        listView.adapter = ArrayAdapter(this, android.R.layout.simple_expandable_list_item_1, item)
         val Adapter = UserAdapter(this, UserList)
         listview.adapter = Adapter
-
     }
 }
